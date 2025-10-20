@@ -14847,6 +14847,386 @@
        ======================================== */
     
     /* ========================================
+       BLOCO 6: BÔNUS #1 - RESPONSIVIDADE (LAYOUT MOBILE)
+       ======================================== */
+    
+    /* GLOBAL - Remover interferências - deixar table layout funcionar */
+    
+    /* Desktop - Garantir que o fundo seja visível */
+    @media (min-width: 768px) {
+      .bonus1-container {
+        /* O background já está no inline style, apenas garantir que não seja sobrescrito */
+      }
+    }
+    
+    /* Mobile (< 768px) - Layout EXATO da imagem de referência */
+    @media (max-width: 767px) {
+      /* Container vira coluna - MANTÉM background e padding */
+      .bonus1-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+        /* Manter o background do inline style */
+        padding: 30px 20px !important;
+      }
+      
+      /* Imagem aparece primeiro */
+      .bonus1-image {
+        order: 1 !important;
+        margin-bottom: 10px;
+      }
+      
+      /* Conteúdo aparece depois */
+      .bonus1-content {
+        order: 2 !important;
+        padding: 0 5px;
+      }
+      
+      /* Badge MENOR e alinhado à esquerda */
+      .bonus1-badge {
+        text-align: left !important;
+        margin-bottom: 20px !important;
+      }
+      
+      .bonus1-badge span {
+        background-color: rgba(60,60,70,0.9) !important;
+        color: rgb(180,180,185) !important;
+        padding: 8px 16px !important;
+        font-size: 11px !important;
+        font-weight: 500 !important;
+        border: none !important;
+      }
+      
+      /* Título ALINHADO À ESQUERDA (não centralizado!) */
+      .bonus1-title {
+        text-align: left !important;
+        font-size: 38px !important;
+        font-weight: 600 !important;
+        margin-bottom: 20px !important;
+        letter-spacing: -1px !important;
+        line-height: 1.1 !important;
+      }
+      
+      /* Descrição ALINHADA À ESQUERDA (não centralizada!) */
+      .bonus1-desc {
+        text-align: left !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 1.55 !important;
+        color: rgb(200,200,205) !important;
+        margin-bottom: 30px !important;
+      }
+      
+      /* Steps - sem interferência no layout table */
+      .bonus1-steps strong {
+        font-weight: 600 !important;
+        color: rgb(240,240,245) !important;
+      }
+    }
+    
+    /* Mobile pequeno (< 480px) */
+    @media (max-width: 479px) {
+      .bonus1-content {
+        padding: 0 10px;
+      }
+      
+      .bonus1-title {
+        font-size: 32px !important;
+        letter-spacing: -0.5px !important;
+      }
+      
+      .bonus1-desc {
+        font-size: 15px !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BLOCO 6 - RESPONSIVIDADE
+       ======================================== */
+    
+    /* ========================================
+       BÔNUS #2 - RESPONSIVIDADE (DESIGN IGUAL BÔNUS #1)
+       ======================================== */
+    
+    /* Mobile (< 768px) */
+    @media (max-width: 767px) {
+      .bonus2-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+        padding: 30px 20px !important;
+      }
+      
+      .bonus2-image {
+        order: 1 !important;
+        margin-bottom: 10px;
+      }
+      
+      .bonus2-content {
+        order: 2 !important;
+        padding: 0 5px;
+      }
+      
+      .bonus2-badge {
+        text-align: left !important;
+        margin-bottom: 20px !important;
+      }
+      
+      .bonus2-title {
+        text-align: left !important;
+        font-size: 38px !important;
+        font-weight: 600 !important;
+        margin-bottom: 20px !important;
+        letter-spacing: -1px !important;
+        line-height: 1.1 !important;
+      }
+      
+      .bonus2-desc {
+        text-align: left !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 1.55 !important;
+        color: rgb(200,200,205) !important;
+        margin-bottom: 30px !important;
+      }
+      
+      .bonus2-steps strong {
+        font-weight: 600 !important;
+        color: rgb(240,240,245) !important;
+      }
+    }
+    
+    /* Mobile pequeno (< 480px) */
+    @media (max-width: 479px) {
+      .bonus2-content {
+        padding: 0 10px;
+      }
+      
+      .bonus2-title {
+        font-size: 32px !important;
+        letter-spacing: -0.5px !important;
+      }
+      
+      .bonus2-desc {
+        font-size: 15px !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BÔNUS #2 - RESPONSIVIDADE
+       ======================================== */
+    
+    /* ========================================
+       BÔNUS #3 - RESPONSIVIDADE (DESIGN IGUAL BÔNUS #1 E #2)
+       ======================================== */
+    
+    /* Mobile (< 768px) */
+    @media (max-width: 767px) {
+      .bonus3-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+        padding: 30px 20px !important;
+      }
+      
+      .bonus3-image {
+        order: 1 !important;
+        margin-bottom: 10px;
+      }
+      
+      .bonus3-content {
+        order: 2 !important;
+        padding: 0 5px;
+      }
+      
+      .bonus3-badge {
+        text-align: left !important;
+        margin-bottom: 20px !important;
+      }
+      
+      .bonus3-title {
+        text-align: left !important;
+        font-size: 38px !important;
+        font-weight: 600 !important;
+        margin-bottom: 20px !important;
+        letter-spacing: -1px !important;
+        line-height: 1.1 !important;
+      }
+      
+      .bonus3-desc {
+        text-align: left !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 1.55 !important;
+        color: rgb(200,200,205) !important;
+        margin-bottom: 30px !important;
+      }
+      
+      .bonus3-steps strong {
+        font-weight: 600 !important;
+        color: rgb(240,240,245) !important;
+      }
+    }
+    
+    /* Mobile pequeno (< 480px) */
+    @media (max-width: 479px) {
+      .bonus3-content {
+        padding: 0 10px;
+      }
+      
+      .bonus3-title {
+        font-size: 32px !important;
+        letter-spacing: -0.5px !important;
+      }
+      
+      .bonus3-desc {
+        font-size: 15px !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BÔNUS #3 - RESPONSIVIDADE
+       ======================================== */
+    
+    /* ========================================
+       BÔNUS #4 - RESPONSIVIDADE (DESIGN IGUAL OUTROS BÔNUS)
+       ======================================== */
+    
+    /* Mobile (< 768px) */
+    @media (max-width: 767px) {
+      .bonus4-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+        padding: 30px 20px !important;
+      }
+      
+      .bonus4-image {
+        order: 1 !important;
+        margin-bottom: 10px;
+      }
+      
+      .bonus4-content {
+        order: 2 !important;
+        padding: 0 5px;
+      }
+      
+      .bonus4-badge {
+        text-align: left !important;
+        margin-bottom: 20px !important;
+      }
+      
+      .bonus4-title {
+        text-align: left !important;
+        font-size: 38px !important;
+        font-weight: 600 !important;
+        margin-bottom: 20px !important;
+        letter-spacing: -1px !important;
+        line-height: 1.1 !important;
+      }
+      
+      .bonus4-desc {
+        text-align: left !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 1.55 !important;
+        color: rgb(200,200,205) !important;
+        margin-bottom: 30px !important;
+      }
+      
+      .bonus4-steps strong {
+        font-weight: 600 !important;
+        color: rgb(240,240,245) !important;
+      }
+    }
+    
+    /* Mobile pequeno (< 480px) */
+    @media (max-width: 479px) {
+      .bonus4-content {
+        padding: 0 10px;
+      }
+      
+      .bonus4-title {
+        font-size: 32px !important;
+        letter-spacing: -0.5px !important;
+      }
+      
+      .bonus4-desc {
+        font-size: 15px !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BÔNUS #4 - RESPONSIVIDADE
+       ======================================== */
+    
+    /* ========================================
+       BÔNUS #5 - RESPONSIVIDADE (DESIGN IGUAL OUTROS BÔNUS)
+       ======================================== */
+    
+    /* Mobile (< 768px) */
+    @media (max-width: 767px) {
+      .bonus5-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+        padding: 30px 20px !important;
+      }
+      
+      .bonus5-image {
+        order: 1 !important;
+        margin-bottom: 10px;
+      }
+      
+      .bonus5-content {
+        order: 2 !important;
+        padding: 0 5px;
+      }
+      
+      .bonus5-badge {
+        text-align: left !important;
+        margin-bottom: 20px !important;
+      }
+      
+      .bonus5-title {
+        text-align: left !important;
+        font-size: 38px !important;
+        font-weight: 600 !important;
+        margin-bottom: 20px !important;
+        letter-spacing: -1px !important;
+        line-height: 1.1 !important;
+      }
+      
+      .bonus5-desc {
+        text-align: left !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 1.55 !important;
+        color: rgb(200,200,205) !important;
+      }
+    }
+    
+    /* Mobile pequeno (< 480px) */
+    @media (max-width: 479px) {
+      .bonus5-content {
+        padding: 0 10px;
+      }
+      
+      .bonus5-title {
+        font-size: 32px !important;
+        letter-spacing: -0.5px !important;
+      }
+      
+      .bonus5-desc {
+        font-size: 15px !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BÔNUS #5 - RESPONSIVIDADE
+       ======================================== */
+    
+    /* ========================================
        BLOCO 2: CARROSSEL DE PROVAS SOCIAIS - RESPONSIVIDADE
        ======================================== */
     
@@ -16423,86 +16803,86 @@
                 </p>
               </div>
 
-              <!-- Container: Conteúdo à esquerda + Imagem à direita -->
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+              <!-- Container: Mobile (coluna) / Desktop (2 colunas) com fundo sutil -->
+              <div class="bonus1-container" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;background:linear-gradient(135deg, rgba(25,25,35,0.9) 0%, rgba(15,15,25,1) 100%);border:1px solid rgba(60,60,75,0.5);border-radius:24px;padding:50px 40px;box-shadow:0 10px 40px rgba(0,0,0,0.3)">
                 
-                <!-- Coluna Esquerda: Conteúdo do Bônus #1 -->
-                <div>
+                <!-- Imagem do Cérebro (aparece primeiro no mobile) -->
+                <div class="bonus1-image" style="position:relative;order:2">
+                  <div style="border-radius:20px;overflow:hidden;max-width:350px;margin:0 auto">
+                    <img src="images/assets/cerebro.png" alt="Cérebro do Silver" style="width:350px;height:auto;display:block;max-width:100%" />
+                  </div>
+                </div>
+
+                <!-- Conteúdo do Bônus #1 (aparece depois no mobile) -->
+                <div class="bonus1-content" style="order:1">
                   <!-- Badge Bônus #1 -->
-                  <div style="margin-bottom:20px">
+                  <div class="bonus1-badge" style="margin-bottom:20px">
                     <span style="background-color:rgba(40,40,45,0.8);color:rgb(200,200,205);padding:8px 18px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.5px;border:1px solid rgb(60,60,65)">
                       Bônus #1
                     </span>
                   </div>
 
                   <!-- Título do Bônus -->
-                  <h3 style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
+                  <h3 class="bonus1-title" style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
                     Cérebro do Silver
                   </h3>
 
                   <!-- Descrição -->
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:30px">
+                  <p class="bonus1-desc" style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:30px">
                     Crie seu primeiro produto digital em apenas algumas horas usando esta ferramenta que ajudará você a encontrar um problema lucrativo para resolver e, em seguida, desenvolver um método passo a passo para resolver esse problema (mesmo sem nenhuma experiência anterior)
                   </p>
 
-                  <!-- Lista de Etapas com Checkmarks -->
-                  <div style="display:flex;flex-direction:column;gap:15px">
+                  <!-- Lista de Etapas com Checkmarks - ESTRUTURA SIMPLIFICADA -->
+                  <div class="bonus1-steps" style="display:block;margin:0;padding:0">
                     
                     <!-- Etapa 1 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
                         <strong style="color:rgb(250,250,250)">Etapa 1:</strong> Descubra sua zona de valor única
-                      </p>
+                      </div>
                     </div>
 
                     <!-- Etapa 2 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
                         <strong style="color:rgb(250,250,250)">Etapa 2:</strong> use a IA para transformar mais de 100 fontes em um mapa simples de 3 passos
-                      </p>
+                      </div>
                     </div>
 
                     <!-- Etapa 3 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
                         <strong style="color:rgb(250,250,250)">Etapa 3:</strong> Empacote em um formato comprovado (e-book, desafio, plano)
-                      </p>
+                      </div>
                     </div>
 
                     <!-- Etapa 4 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <div style="display:table;width:100%;margin-bottom:0">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
                         <strong style="color:rgb(250,250,250)">Etapa 4:</strong> Lance rapidamente com um MVP e valide com sua primeira venda
-                      </p>
+                      </div>
                     </div>
 
-                  </div>
-                </div>
-
-                <!-- Coluna Direita: Imagem do Cérebro -->
-                <div style="position:relative">
-                  <div style="border-radius:20px;overflow:hidden;box-shadow:0 25px 70px rgba(75,174,250,0.2)">
-                    <img src="images/assets/cerebro.jpeg" alt="Cérebro do Silver" style="width:100%;height:auto;display:block" />
                   </div>
                 </div>
 
@@ -16513,173 +16893,172 @@
           <!-- ======================================== FIM BLOCO 6 ======================================== -->
           
           <!-- ========================================
-               BLOCO 7: BÔNUS #2 (LIMPAMETA) e BÔNUS #3 (COPA FORA DA LEI)
-               - Bônus #2: LIMPAMETA (Imagem à esquerda)
-               - Bônus #3: Entrada para a Copa Fora da Lei (Imagem à direita)
+               BLOCO 7: BÔNUS #2 (ACESSO À FACÇÃO) e BÔNUS #3 (LIMPAMETA)
+               - Bônus #2: Acesso à Facção (Design igual Bônus #1)
+               - Bônus #3: LIMPAMETA (Design igual Bônus #1 e #2)
                ======================================== -->
           <div class="framer-bloco7-bonus-extras" style="width:100%;background-color:rgb(0,0,0);padding:80px 20px">
             <div style="max-width:1200px;margin:0 auto">
               
-              <!-- ==================== BÔNUS #2: LIMPAMETA ==================== -->
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+              <!-- ==================== BÔNUS #2: ACESSO À FACÇÃO (DESIGN IGUAL BÔNUS #1) ==================== -->
+              <div class="bonus2-container" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px;background:linear-gradient(135deg, rgba(25,25,35,0.9) 0%, rgba(15,15,25,1) 100%);border:1px solid rgba(60,60,75,0.5);border-radius:24px;padding:50px 40px;box-shadow:0 10px 40px rgba(0,0,0,0.3)">
                 
-                <!-- Coluna Esquerda: Imagem LIMPAMETA -->
-                <div style="position:relative">
-                  <div style="border-radius:20px;overflow:hidden;box-shadow:0 25px 70px rgba(75,174,250,0.2)">
-                    <img src="images/assets/letrau.jpeg" alt="LIMPAMETA" style="width:100%;height:auto;display:block" />
+                <!-- Imagem da Pessoa (aparece primeiro no mobile) -->
+                <div class="bonus2-image" style="position:relative;order:2">
+                  <div style="border-radius:20px;overflow:hidden;max-width:350px;margin:0 auto">
+                    <img src="images/assets/pessoa.png" alt="Acesso à Facção" style="width:350px;height:auto;display:block;max-width:100%" />
                   </div>
                 </div>
 
-                <!-- Coluna Direita: Conteúdo do Bônus #2 -->
-                <div>
+                <!-- Conteúdo do Bônus #2 (aparece depois no mobile) -->
+                <div class="bonus2-content" style="order:1">
                   <!-- Badge Bônus #2 -->
-                  <div style="margin-bottom:20px">
+                  <div class="bonus2-badge" style="margin-bottom:20px">
                     <span style="background-color:rgba(40,40,45,0.8);color:rgb(200,200,205);padding:8px 18px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.5px;border:1px solid rgb(60,60,65)">
                       Bônus #2
                     </span>
                   </div>
 
                   <!-- Título do Bônus -->
-                  <h3 style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
-                    LIMPAMETA
+                  <h3 class="bonus2-title" style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
+                    Acesso à Facção
                   </h3>
 
                   <!-- Descrição -->
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:30px">
-                    Parabéns: Agora você tem acesso a uma ferramenta que irá fazer seus vídeos e fotos aparecem para o Brasil inteiro. <strong style="color:rgb(250,250,250)">(Valor de R$2.000, você receberá de graça)</strong>
+                  <p class="bonus2-desc" style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:30px">
+                    O sucesso não acontece isoladamente. Você entrará em um grupo no whatsapp com o próprio Silver, professores 24h online e outros alunos que também estão aprendendo, o chat é liberado para tirar todas as dúvidas:
                   </p>
 
-                  <!-- Lista de Recursos com Checkmarks -->
-                  <div style="display:flex;flex-direction:column;gap:15px">
+                  <!-- Lista de Recursos com Checkmarks - DISPLAY TABLE -->
+                  <div class="bonus2-steps" style="display:block;margin:0;padding:0">
                     
                     <!-- Item 1 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        Remove metadados de imagens e vídeos
-                      </p>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        Compartilhe o que está funcionando
+                      </div>
                     </div>
 
                     <!-- Item 2 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        Gera anúncios que realmente vendem
-                      </p>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        Mantenham-se responsáveis uns pelos outros
+                      </div>
                     </div>
 
                     <!-- Item 3 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        Ajusta-se entre plataformas
-                      </p>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                          <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        Empurrem uns aos outros para vencer
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        Fica mais inteligente a cada venda
-                      </p>
                     </div>
 
                   </div>
+
+                  <!-- Texto Final -->
+                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;font-style:italic;margin-top:20px">
+                    Esse grupo vai ser sua nova família
+                  </p>
                 </div>
 
               </div>
               <!-- ==================== FIM BÔNUS #2 ==================== -->
 
-              <!-- ==================== BÔNUS #3: COPA FORA DA LEI ==================== -->
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+              <!-- ==================== BÔNUS #3: LIMPAMETA (DESIGN IGUAL BÔNUS #1 E #2) ==================== -->
+              <div class="bonus3-container" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;background:linear-gradient(135deg, rgba(25,25,35,0.9) 0%, rgba(15,15,25,1) 100%);border:1px solid rgba(60,60,75,0.5);border-radius:24px;padding:50px 40px;box-shadow:0 10px 40px rgba(0,0,0,0.3)">
                 
-                <!-- Coluna Esquerda: Conteúdo do Bônus #3 -->
-                <div>
+                <!-- Conteúdo do Bônus #3 (aparece depois no mobile) -->
+                <div class="bonus3-content" style="order:1">
                   <!-- Badge Bônus #3 -->
-                  <div style="margin-bottom:20px">
+                  <div class="bonus3-badge" style="margin-bottom:20px">
                     <span style="background-color:rgba(40,40,45,0.8);color:rgb(200,200,205);padding:8px 18px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.5px;border:1px solid rgb(60,60,65)">
                       Bônus #3
                     </span>
                   </div>
 
                   <!-- Título do Bônus -->
-                  <h3 style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
-                    Entrada para a Copa Fora da Lei
+                  <h3 class="bonus3-title" style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
+                    LIMPAMETA
                   </h3>
 
                   <!-- Descrição -->
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:30px">
-                    Uma competição de 90 dias para criadores dentro do Fora da Lei com <strong style="color:rgb(250,250,250)">R$50 mil em prêmios.</strong>
+                  <p class="bonus3-desc" style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:30px">
+                    Parabéns: Agora você tem acesso a uma ferramenta que irá fazer seus vídeos e fotos aparecem para o Brasil inteiro. <strong style="color:rgb(250,250,250)">(Valor de R$2.000, você receberá de graça)</strong>
                   </p>
 
-                  <!-- Lista de Prêmios com Checkmarks -->
-                  <div style="display:flex;flex-direction:column;gap:15px;margin-bottom:30px">
+                  <!-- Lista de Recursos com Checkmarks - DISPLAY TABLE -->
+                  <div class="bonus3-steps" style="display:block;margin:0;padding:0">
                     
-                    <!-- Prêmio 1 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <!-- Item 1 -->
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        <strong style="color:rgb(250,250,250)">1º lugar:</strong> Rolex de R$ 40.000
-                      </p>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        Remove metadados de imagens e vídeos
+                      </div>
                     </div>
 
-                    <!-- Prêmio 2 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <!-- Item 2 -->
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        4 Macbooks, 5 Iphones 17
-                      </p>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        Gera anúncios que realmente vendem
+                      </div>
                     </div>
 
-                    <!-- Prêmio 3 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <!-- Item 3 -->
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        10 convites para o Mastermind de Dubai de R$25.000
-                      </p>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        Ajusta-se entre plataformas
+                      </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                          <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        Fica mais inteligente a cada venda
+                      </div>
                     </div>
 
                   </div>
-
-                  <!-- Texto Final -->
-                  <p style="color:rgb(190,190,195);font-size:15px;line-height:1.7">
-                    Todos começam do zero. Qualquer um pode ganhar.<br>
-                    <strong style="color:rgb(250,250,250)">(R$ 1,9 milhões gerados por alunos na última vez)</strong>
-                  </p>
                 </div>
 
-                <!-- Coluna Direita: Imagem Copa Fora da Lei -->
-                <div style="position:relative">
-                  <div style="border-radius:20px;overflow:hidden;box-shadow:0 25px 70px rgba(75,174,250,0.2)">
-                    <img src="images/assets/carta.jpeg" alt="Copa Fora da Lei" style="width:100%;height:auto;display:block" />
+                <!-- Imagem SAAS (aparece primeiro no mobile) -->
+                <div class="bonus3-image" style="position:relative;order:2">
+                  <div style="border-radius:20px;overflow:hidden;max-width:350px;margin:0 auto">
+                    <img src="images/assets/saas.png" alt="LIMPAMETA" style="width:350px;height:auto;display:block;max-width:100%" />
                   </div>
                 </div>
 
@@ -16691,120 +17070,117 @@
           <!-- ======================================== FIM BLOCO 7 ======================================== -->
           
           <!-- ========================================
-               BLOCO 8: BÔNUS #4 (ACESSO À FACÇÃO) e BÔNUS #5 (GARANTIA DO SISTEMA PERFEITO)
-               - Bônus #4: Acesso à Facção (Imagem à esquerda)
+               BLOCO 8: BÔNUS #4 (COPA FORA DA LEI) e BÔNUS #5 (GARANTIA DO SISTEMA PERFEITO)
+               - Bônus #4: Entrada para a Copa Fora da Lei (Imagem à direita)
                - Bônus #5: Garantia do sistema perfeito (Imagem à direita)
                - Botão CTA amarelo "Entre para o fora da lei" no final
                ======================================== -->
           <div class="framer-bloco8-bonus-finais" style="width:100%;background-color:rgb(0,0,0);padding:80px 20px">
             <div style="max-width:1200px;margin:0 auto">
               
-              <!-- ==================== BÔNUS #4: ACESSO À FACÇÃO ==================== -->
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+              <!-- ==================== BÔNUS #4: ENTRADA PARA A COPA FORA DA LEI (DESIGN IGUAL OUTROS BÔNUS) ==================== -->
+              <div class="bonus4-container" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px;background:linear-gradient(135deg, rgba(25,25,35,0.9) 0%, rgba(15,15,25,1) 100%);border:1px solid rgba(60,60,75,0.5);border-radius:24px;padding:50px 40px;box-shadow:0 10px 40px rgba(0,0,0,0.3)">
                 
-                <!-- Coluna Esquerda: Imagem Facção -->
-                <div style="position:relative">
-                  <div style="border-radius:20px;overflow:hidden;box-shadow:0 25px 70px rgba(75,174,250,0.2)">
-                    <img src="images/assets/fogo.jpeg" alt="Acesso à Facção" style="width:100%;height:auto;display:block" />
-                  </div>
-                </div>
-
-                <!-- Coluna Direita: Conteúdo do Bônus #4 -->
-                <div>
+                <!-- Conteúdo do Bônus #4 (aparece depois no mobile) -->
+                <div class="bonus4-content" style="order:1">
                   <!-- Badge Bônus #4 -->
-                  <div style="margin-bottom:20px">
+                  <div class="bonus4-badge" style="margin-bottom:20px">
                     <span style="background-color:rgba(40,40,45,0.8);color:rgb(200,200,205);padding:8px 18px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.5px;border:1px solid rgb(60,60,65)">
                       Bônus #4
                     </span>
                   </div>
 
                   <!-- Título do Bônus -->
-                  <h3 style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
-                    Acesso à Facção
+                  <h3 class="bonus4-title" style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
+                    Entrada para a Copa Fora da Lei
                   </h3>
 
                   <!-- Descrição -->
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:15px">
-                    O sucesso não acontece isoladamente.
-                  </p>
-                  
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:30px">
-                    Você entrará em um grupo no whatsapp com o próprio Silver, professores 24h online e outros alunos que também estão aprendendo, o chat é liberado para tirar todas as dúvidas:
+                  <p class="bonus4-desc" style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:30px">
+                    Uma competição de 90 dias para criadores dentro do Fora da Lei com <strong style="color:rgb(250,250,250)">R$50 mil em prêmios.</strong>
                   </p>
 
-                  <!-- Lista de Recursos com Checkmarks -->
-                  <div style="display:flex;flex-direction:column;gap:15px;margin-bottom:25px">
+                  <!-- Lista de Prêmios com Checkmarks - DISPLAY TABLE -->
+                  <div class="bonus4-steps" style="display:block;margin:0;padding:0;margin-bottom:30px">
                     
-                    <!-- Item 1 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <!-- Prêmio 1 -->
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        Compartilhe o que está funcionando
-                      </p>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        <strong style="color:rgb(250,250,250)">1º lugar:</strong> Rolex de R$ 40.000
+                      </div>
                     </div>
 
-                    <!-- Item 2 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <!-- Prêmio 2 -->
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        Mantenham-se responsáveis uns pelos outros
-                      </p>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        4 Macbooks, 5 Iphones 17
+                      </div>
                     </div>
 
-                    <!-- Item 3 -->
-                    <div style="display:flex;align-items:flex-start;gap:12px">
-                      <div style="flex-shrink:0;margin-top:2px">
+                    <!-- Prêmio 3 -->
+                    <div style="display:table;width:100%;margin-bottom:15px">
+                      <div style="display:table-cell;vertical-align:middle;width:20px;padding-right:10px">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                           <path d="M20 6L9 17l-5-5" stroke="rgb(100,180,255)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </div>
-                      <p style="color:rgb(220,220,225);font-size:15px;line-height:1.5;margin:0">
-                        Empurrem uns aos outros para vencer
-                      </p>
+                      <div style="display:table-cell;vertical-align:middle;color:rgb(220,220,225);font-size:15px;line-height:1.5">
+                        10 convites para o Mastermind de Dubai de R$25.000
+                      </div>
                     </div>
 
                   </div>
 
                   <!-- Texto Final -->
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;font-style:italic">
-                    Esse grupo vai ser sua nova família
+                  <p style="color:rgb(190,190,195);font-size:15px;line-height:1.7">
+                    Todos começam do zero. Qualquer um pode ganhar.<br>
+                    <strong style="color:rgb(250,250,250)">(R$ 1,9 milhões gerados por alunos na última vez)</strong>
                   </p>
+                </div>
+
+                <!-- Imagem Copa Fora da Lei (aparece primeiro no mobile) -->
+                <div class="bonus4-image" style="position:relative;order:2">
+                  <div style="border-radius:20px;overflow:hidden;max-width:350px;margin:0 auto">
+                    <img src="images/assets/convite.png" alt="Copa Fora da Lei" style="width:350px;height:auto;display:block;max-width:100%" />
+                  </div>
                 </div>
 
               </div>
               <!-- ==================== FIM BÔNUS #4 ==================== -->
 
-              <!-- ==================== BÔNUS #5: GARANTIA DO SISTEMA PERFEITO ==================== -->
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:60px">
+              <!-- ==================== BÔNUS #5: GARANTIA DO SISTEMA PERFEITO (DESIGN IGUAL OUTROS BÔNUS) ==================== -->
+              <div class="bonus5-container" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:60px;background:linear-gradient(135deg, rgba(25,25,35,0.9) 0%, rgba(15,15,25,1) 100%);border:1px solid rgba(60,60,75,0.5);border-radius:24px;padding:50px 40px;box-shadow:0 10px 40px rgba(0,0,0,0.3)">
                 
-                <!-- Coluna Esquerda: Conteúdo do Bônus #5 -->
-                <div>
+                <!-- Conteúdo do Bônus #5 (aparece depois no mobile) -->
+                <div class="bonus5-content" style="order:1">
                   <!-- Badge Bônus #5 -->
-                  <div style="margin-bottom:20px">
+                  <div class="bonus5-badge" style="margin-bottom:20px">
                     <span style="background-color:rgba(40,40,45,0.8);color:rgb(200,200,205);padding:8px 18px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.5px;border:1px solid rgb(60,60,65)">
                       Bônus #5
                     </span>
                   </div>
 
                   <!-- Título do Bônus -->
-                  <h3 style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
+                  <h3 class="bonus5-title" style="color:rgb(250,250,250);font-size:42px;font-weight:700;line-height:1.2;margin-bottom:25px;letter-spacing:-0.5px">
                     Garantia do sistema perfeito
                   </h3>
 
                   <!-- Descrição -->
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:20px">
+                  <p class="bonus5-desc" style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:20px">
                     Este bônus é sua rede de segurança...
                   </p>
                   
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:25px">
+                  <p class="bonus5-desc" style="color:rgb(190,190,195);font-size:16px;line-height:1.7;margin-bottom:25px">
                     Porque se você não fizer sua primeira venda em 60 dias...
                   </p>
 
@@ -16812,15 +17188,15 @@
                     Minha equipe analisará individualmente seu produto e sua estratégia de distribuição e fornecerá a você uma compreensão clara do que precisa mudar.
                   </p>
 
-                  <p style="color:rgb(190,190,195);font-size:16px;line-height:1.7">
+                  <p class="bonus5-desc" style="color:rgb(190,190,195);font-size:16px;line-height:1.7">
                     Assim, você pode parar de se questionar e finalmente começar a ganhar dinheiro.
                   </p>
                 </div>
 
-                <!-- Coluna Direita: Imagem Garantia -->
-                <div style="position:relative">
-                  <div style="border-radius:20px;overflow:hidden;box-shadow:0 25px 70px rgba(75,174,250,0.2)">
-                    <img src="images/assets/aviao.jpeg" alt="Garantia do sistema perfeito" style="width:100%;height:auto;display:block" />
+                <!-- Imagem Homem (aparece primeiro no mobile) -->
+                <div class="bonus5-image" style="position:relative;order:2">
+                  <div style="border-radius:20px;overflow:hidden;max-width:350px;margin:0 auto">
+                    <img src="images/assets/homem.png" alt="Garantia do sistema perfeito" style="width:350px;height:auto;display:block;max-width:100%" />
                   </div>
                 </div>
 
@@ -17711,6 +18087,7 @@
   </script>
   <script src="js/fpr.js" async=""></script>
   <!-- End of bodyEnd -->
+
 
 
 </body>
