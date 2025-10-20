@@ -14244,6 +14244,340 @@
        FIM BLOCO 1 - RESPONSIVIDADE
        ======================================== */
     
+    /* ========================================
+       BLOCO 2: CARROSSEL DE PROVAS SOCIAIS - RESPONSIVIDADE
+       ======================================== */
+    
+    /* Estilos base do carrossel */
+    .framer-bloco2-provas-sociais {
+      overflow: visible !important;
+    }
+    
+    .framer-bloco2-provas-sociais #carouselWrapper {
+      width: 100% !important;
+      overflow: hidden !important;
+    }
+    
+    .framer-bloco2-provas-sociais #carouselTrack {
+      will-change: transform !important;
+    }
+    
+    /* Estilos dos botões - CÍRCULO PERFEITO GARANTIDO */
+    button#prevBtn,
+    button#nextBtn {
+      /* Reset completo */
+      all: unset !important;
+      
+      /* Posicionamento */
+      position: absolute !important;
+      top: 50% !important;
+      z-index: 100 !important;
+      
+      /* Dimensões FIXAS - círculo perfeito */
+      width: 50px !important;
+      height: 50px !important;
+      min-width: 50px !important;
+      min-height: 50px !important;
+      max-width: 50px !important;
+      max-height: 50px !important;
+      
+      /* Visual */
+      background: rgb(255,246,0) !important;
+      border: 2px solid rgba(0,0,0,0.2) !important;
+      border-radius: 50% !important;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
+      
+      /* Flexbox para centralizar texto */
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      
+      /* Texto */
+      font-size: 30px !important;
+      font-weight: bold !important;
+      color: rgb(0,0,0) !important;
+      line-height: 1 !important;
+      text-align: center !important;
+      
+      /* Comportamento */
+      cursor: pointer !important;
+      user-select: none !important;
+      -webkit-user-select: none !important;
+      transition: all 0.3s ease !important;
+      
+      /* Garantias extras */
+      padding: 0 !important;
+      margin: 0 !important;
+      box-sizing: border-box !important;
+      flex-shrink: 0 !important;
+      flex-grow: 0 !important;
+      overflow: hidden !important;
+      transform: translateY(-50%) !important;
+    }
+    
+    button#prevBtn {
+      left: 10px !important;
+    }
+    
+    button#nextBtn {
+      right: 10px !important;
+    }
+    
+    .framer-bloco2-provas-sociais #prevBtn:hover,
+    .framer-bloco2-provas-sociais #nextBtn:hover {
+      background: rgb(255,255,100) !important;
+      transform: translateY(-50%) scale(1.15) !important;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5) !important;
+    }
+    
+    .framer-bloco2-provas-sociais #prevBtn:active,
+    .framer-bloco2-provas-sociais #nextBtn:active {
+      transform: translateY(-50%) scale(0.95) !important;
+    }
+    
+    /* Mobile pequeno (< 480px) */
+    @media (max-width: 479px) {
+      .framer-bloco2-provas-sociais .framer-HdlzI {
+        padding: 60px 5px !important;
+      }
+      
+      .framer-bloco2-provas-sociais #carouselTrack {
+        gap: 20px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .carousel-item {
+        flex: 0 0 calc(100vw - 80px) !important;
+        max-width: 320px !important;
+        height: 450px !important;
+        margin: 0 !important;
+      }
+      
+      .framer-bloco2-provas-sociais .carousel-item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+      }
+      
+      .framer-bloco2-provas-sociais h2 {
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        line-height: 36px !important;
+        margin-bottom: 30px !important;
+        padding: 0 15px !important;
+        letter-spacing: -2px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj {
+        margin-bottom: 30px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj p {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 25.6px !important;
+        letter-spacing: normal !important;
+        margin: 0 auto !important;
+        padding: 0 15px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj p:nth-child(3) {
+        margin-top: 20px !important;
+      }
+      
+      /* BOTÕES MOBILE - CÍRCULO PERFEITO */
+      #prevBtn,
+      #nextBtn,
+      button#prevBtn,
+      button#nextBtn,
+      .framer-bloco2-provas-sociais #prevBtn,
+      .framer-bloco2-provas-sociais #nextBtn {
+        width: 46px !important;
+        height: 46px !important;
+        min-width: 46px !important;
+        min-height: 46px !important;
+        max-width: 46px !important;
+        max-height: 46px !important;
+        font-size: 24px !important;
+        left: 10px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        aspect-ratio: 1 / 1 !important;
+        flex-shrink: 0 !important;
+        flex-grow: 0 !important;
+      }
+      
+      #nextBtn,
+      button#nextBtn,
+      .framer-bloco2-provas-sociais #nextBtn {
+        right: 10px !important;
+        left: auto !important;
+      }
+      
+      .framer-bloco2-provas-sociais #carouselDots {
+        margin-top: 25px !important;
+        gap: 6px !important;
+      }
+    }
+    
+    /* Mobile (480px - 767px) */
+    @media (min-width: 480px) and (max-width: 767px) {
+      .framer-bloco2-provas-sociais .framer-HdlzI {
+        padding: 70px 10px !important;
+      }
+      
+      .framer-bloco2-provas-sociais #carouselTrack {
+        gap: 20px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .carousel-item {
+        flex: 0 0 calc(100vw - 100px) !important;
+        max-width: 360px !important;
+        height: 480px !important;
+        margin: 0 !important;
+      }
+      
+      .framer-bloco2-provas-sociais .carousel-item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+      }
+      
+      .framer-bloco2-provas-sociais h2 {
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        line-height: 36px !important;
+        margin-bottom: 30px !important;
+        padding: 0 20px !important;
+        letter-spacing: -2px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj {
+        margin-bottom: 30px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj p {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 25.6px !important;
+        letter-spacing: normal !important;
+        padding: 0 20px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj p:nth-child(3) {
+        margin-top: 20px !important;
+      }
+      
+      /* BOTÕES MOBILE MÉDIO - CÍRCULO PERFEITO */
+      #prevBtn,
+      #nextBtn,
+      button#prevBtn,
+      button#nextBtn,
+      .framer-bloco2-provas-sociais #prevBtn,
+      .framer-bloco2-provas-sociais #nextBtn {
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+        max-width: 48px !important;
+        max-height: 48px !important;
+        font-size: 26px !important;
+        left: 12px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        aspect-ratio: 1 / 1 !important;
+        flex-shrink: 0 !important;
+        flex-grow: 0 !important;
+      }
+      
+      #nextBtn,
+      button#nextBtn,
+      .framer-bloco2-provas-sociais #nextBtn {
+        right: 12px !important;
+        left: auto !important;
+      }
+      
+      .framer-bloco2-provas-sociais #carouselDots {
+        margin-top: 25px !important;
+        gap: 7px !important;
+      }
+    }
+    
+    /* Tablet (768px - 1199px) */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .framer-bloco2-provas-sociais .carousel-item {
+        flex: 0 0 320px !important;
+        height: 450px !important;
+      }
+      
+      .framer-bloco2-provas-sociais h2 {
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        line-height: 36px !important;
+        margin-bottom: 30px !important;
+        letter-spacing: -2px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj {
+        margin-bottom: 30px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj p {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 25.6px !important;
+        letter-spacing: normal !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj p:nth-child(3) {
+        margin-top: 20px !important;
+      }
+    }
+    
+    /* Desktop (1200px+) */
+    @media (min-width: 1200px) {
+      .framer-bloco2-provas-sociais .carousel-item {
+        flex: 0 0 350px !important;
+        height: 500px !important;
+      }
+      
+      .framer-bloco2-provas-sociais h2 {
+        font-size: 51px !important;
+        font-weight: 600 !important;
+        line-height: 61.2px !important;
+        margin-bottom: 30px !important;
+        letter-spacing: -2px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj {
+        margin-bottom: 30px !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj p {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 25.6px !important;
+        letter-spacing: normal !important;
+      }
+      
+      .framer-bloco2-provas-sociais .framer-19qceuj p:nth-child(3) {
+        margin-top: 20px !important;
+      }
+    }
+    
+    /* ======================================== 
+       FIM BLOCO 2 - RESPONSIVIDADE
+       ======================================== */
+    
     /* Melhorias para Desktop (1200px+) */
     @media (min-width: 1200px) {
       .framer-bloco5-treinamento,
@@ -14724,50 +15058,118 @@
           <!-- ======================================== FIM BLOCO 1 ======================================== -->
           
           <!-- ========================================
-               BLOCO 2: PROVA SOCIAL
-               - Resultados financeiros ($8.9M)
-               - Credibilidade e validação
+               BLOCO 2: CARROSSEL DE PROVAS SOCIAIS
+               - Animação automática horizontal infinita
+               - Navegação manual com botões Prev/Next
+               - 8 screenshots de WhatsApp
+               - Responsivo para mobile
                ======================================== -->
-          <div class="framer-1pltx9a-container">
+          <div class="framer-1pltx9a-container framer-bloco2-provas-sociais">
             <div class="framer-HdlzI framer-zSl54 framer-1yOtD framer-xzq7ro framer-v-xzq7ro" data-framer-name="Desktop"
-              style="width:100%;background-color:rgb(0, 0, 0);padding:80px 20px">
-              <div class="framer-1fe8khr" data-framer-name="Text" style="max-width:1200px;margin:0 auto">
-                <div class="framer-19qceuj" data-framer-name="Titulo Prova Social"
-                  data-framer-component-type="RichTextContainer"
-                  style="--extracted-1of0zx5:var(--token-2f9c3496-6990-4dc2-83bb-cda24e8ac727, rgb(250, 250, 250));--extracted-1qn201a:var(--token-f952b3ab-38a5-4ac1-93a7-22349b7f3cc8, rgb(255, 246, 0));--framer-paragraph-spacing:0px;transform:none">
-                  <h2 class="framer-text framer-styles-preset-1dvk7j8" data-styles-preset="vh1e5yIUY"
-                    style="--framer-text-alignment:center;--framer-text-color:var(--extracted-1of0zx5, var(--token-2f9c3496-6990-4dc2-83bb-cda24e8ac727, rgb(250, 250, 250)));margin-bottom:20px">
-                    Sua vitória pode ser a <span class="framer-text"
-                      style="--framer-text-color:var(--extracted-1qn201a, var(--token-f952b3ab-38a5-4ac1-93a7-22349b7f3cc8, rgb(255, 246, 0)))">próxima</span></h2>
-                </div>
+              style="width:100%;background-color:rgb(0, 0, 0);padding:80px 20px;overflow:hidden">
+              <div class="framer-1fe8khr" data-framer-name="Text" style="max-width:1400px;margin:0 auto">
                 
-                <!-- Texto descritivo -->
-                <div class="framer-qrag14" data-framer-component-type="RichTextContainer"
-                  style="--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none;margin-bottom:40px;text-align:center">
-                  <p class="framer-text" style="color:rgb(255, 255, 255);font-size:18px;line-height:1.6;max-width:800px;margin:0 auto">
-                    De pessoas saindo do clt até outros fazendo <strong>R$ 111 mil em 45 dias</strong>....<br>
+                <!-- Títulos -->
+                <div class="framer-19qceuj" data-framer-name="Titulo Prova Social"
+                  style="margin-bottom:30px;text-align:center">
+                  <h2 class="framer-text framer-styles-preset-1dvk7j8" data-styles-preset="vh1e5yIUY"
+                    style="color:rgb(250, 250, 250);font-size:51px;font-weight:600;line-height:61.2px;text-align:center;margin:0 0 30px 0;letter-spacing:-2px">
+                    Sua vitória pode ser a <span style="color:rgb(255, 246, 0)">Próxima</span>
+                  </h2>
+                  
+                  <!-- Primeiro parágrafo -->
+                  <p class="framer-text" style="color:rgb(255, 255, 255);font-size:16px;font-weight:400;line-height:25.6px;max-width:700px;margin:0 auto;text-align:center;letter-spacing:normal">
+                    De pessoas fazendo a primeira venda até coletando R$ 111 mil em 45 dias....
+                  </p>
+                  
+                  <!-- Segundo parágrafo (com espaçamento) -->
+                  <p class="framer-text" style="color:rgb(255, 255, 255);font-size:16px;font-weight:400;line-height:25.6px;max-width:700px;margin:20px auto 0;text-align:center;letter-spacing:normal">
                     Recebemos mensagens como esta todos os dias. A sua pode ser a próxima.
                   </p>
                 </div>
 
-                <!-- Imagens de prova social -->
-                <div style="display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap;margin-bottom:40px">
-                  <div style="flex:0 0 auto;max-width:300px">
-                    <img src="images/provas/WhatsApp Image 2025-10-19 at 20.56.09.jpeg" alt="Prova Social" 
-                      style="width:100%;height:auto;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.3)" />
+                <!-- Container do Carrossel -->
+                <div style="position:relative;margin-bottom:50px;margin-top:60px">
+                  
+                  <!-- Botão Previous -->
+                  <button id="prevBtn" onclick="moveCarousel(-1)">‹</button>
+                  
+                  <!-- Wrapper do carrossel com overflow hidden -->
+                  <div id="carouselWrapper" style="overflow:hidden;border-radius:16px;position:relative">
+                    <!-- Track do carrossel que se move -->
+                    <div id="carouselTrack" style="display:flex;gap:20px;transition:transform 0.5s ease-in-out;will-change:transform">
+                      
+                      <!-- Imagem 1 -->
+                      <div class="carousel-item" style="flex:0 0 350px;height:500px;position:relative">
+                        <img src="images/provas/WhatsApp Image 2025-10-19 at 20.56.09.jpeg" alt="Prova Social 1" 
+                          style="width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5)" />
+                      </div>
+                      
+                      <!-- Imagem 2 -->
+                      <div class="carousel-item" style="flex:0 0 350px;height:500px;position:relative">
+                        <img src="images/provas/WhatsApp Image 2025-10-19 at 22.29.04.jpeg" alt="Prova Social 2" 
+                          style="width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5)" />
+                      </div>
+                      
+                      <!-- Imagem 3 -->
+                      <div class="carousel-item" style="flex:0 0 350px;height:500px;position:relative">
+                        <img src="images/provas/WhatsApp Image 2025-10-19 at 22.29.04 (1).jpeg" alt="Prova Social 3" 
+                          style="width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5)" />
+                      </div>
+                      
+                      <!-- Imagem 4 -->
+                      <div class="carousel-item" style="flex:0 0 350px;height:500px;position:relative">
+                        <img src="images/provas/WhatsApp Image 2025-10-19 at 22.29.04 (2).jpeg" alt="Prova Social 4" 
+                          style="width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5)" />
+                      </div>
+                      
+                      <!-- Imagem 5 -->
+                      <div class="carousel-item" style="flex:0 0 350px;height:500px;position:relative">
+                        <img src="images/provas/WhatsApp Image 2025-10-19 at 22.29.04 (3).jpeg" alt="Prova Social 5" 
+                          style="width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5)" />
+                      </div>
+                      
+                      <!-- Imagem 6 -->
+                      <div class="carousel-item" style="flex:0 0 350px;height:500px;position:relative">
+                        <img src="images/provas/WhatsApp Image 2025-10-19 at 22.29.05.jpeg" alt="Prova Social 6" 
+                          style="width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5)" />
+                      </div>
+                      
+                      <!-- Imagem 7 -->
+                      <div class="carousel-item" style="flex:0 0 350px;height:500px;position:relative">
+                        <img src="images/provas/WhatsApp Image 2025-10-19 at 22.29.05 (1).jpeg" alt="Prova Social 7" 
+                          style="width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5)" />
+                      </div>
+                      
+                      <!-- Imagem 8 -->
+                      <div class="carousel-item" style="flex:0 0 350px;height:500px;position:relative">
+                        <img src="images/provas/WhatsApp Image 2025-10-19 at 22.29.05 (2).jpeg" alt="Prova Social 8" 
+                          style="width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.5)" />
+                      </div>
+                      
+                    </div>
                   </div>
-                  <!-- Espaço para mais imagens futuras -->
+                  
+                  <!-- Botão Next -->
+                  <button id="nextBtn" onclick="moveCarousel(1)">›</button>
+                  
+                  <!-- Indicadores de página -->
+                  <div id="carouselDots" style="display:flex;justify-content:center;gap:8px;margin-top:30px">
+                    <!-- Dots serão adicionados via JavaScript -->
+                  </div>
+                  
                 </div>
 
                 <!-- Botão CTA -->
                 <div class="framer-13j5zto" data-framer-name="CTA" style="display:flex;justify-content:center">
                   <div class="framer-1f54xd7-container" style="max-width:400px;width:100%">
-                    <a class="framer-XRNbx framer-1m7b9j framer-v-1rh8rth framer-17z2f5a" data-framer-name="Small Button"
-                      data-highlight="true" tabindex="0" style="max-width:100%;width:100%;text-decoration:none;cursor:pointer">
+                    <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" 
+                       class="framer-XRNbx framer-1m7b9j framer-v-1rh8rth framer-17z2f5a" data-framer-name="Small Button"
+                      data-highlight="true" tabindex="0" style="max-width:100%;width:100%;text-decoration:none;cursor:pointer;display:block">
                       <div class="framer-ow3yem" data-framer-name="Main Button"
-                        style="background-color:rgb(255, 246, 0);border-radius:16px;padding:18px 40px;transition:all 0.2s">
+                        style="background-color:rgb(255, 246, 0);border-radius:16px;padding:18px 40px;transition:all 0.3s;box-shadow:0 4px 20px rgba(255,246,0,0.3)">
                         <div class="framer-tuhgk3" data-framer-name="Text">
-                          <p class="framer-text" style="color:rgb(0, 0, 0);font-size:24px;font-weight:600;text-align:center;margin:0">
+                          <p class="framer-text" style="color:rgb(0, 0, 0);font-size:22px;font-weight:700;text-align:center;margin:0;text-transform:uppercase;letter-spacing:1px">
                             Entre para o fora da lei
                           </p>
                         </div>
@@ -14779,6 +15181,261 @@
               </div>
             </div>
           </div>
+          
+          <!-- JavaScript do Carrossel -->
+          <script>
+            (function() {
+              const track = document.getElementById('carouselTrack');
+              const originalItems = Array.from(document.querySelectorAll('.carousel-item'));
+              const totalItems = originalItems.length;
+              const dotsContainer = document.getElementById('carouselDots');
+              let currentIndex = totalItems; // Começar no primeiro item real (após os clones)
+              let autoPlayInterval;
+              let isTransitioning = false;
+              
+              // Clonar imagens para criar loop infinito
+              // Clonar últimas 3 imagens e colocar no início
+              for (let i = totalItems - 3; i < totalItems; i++) {
+                const clone = originalItems[i].cloneNode(true);
+                track.insertBefore(clone, track.firstChild);
+              }
+              
+              // Clonar primeiras 3 imagens e colocar no final
+              for (let i = 0; i < 3; i++) {
+                const clone = originalItems[i].cloneNode(true);
+                track.appendChild(clone);
+              }
+              
+              // Atualizar referência de todos os itens (incluindo clones)
+              const allItems = document.querySelectorAll('.carousel-item');
+              
+              // Criar dots indicadores (apenas para itens originais)
+              for (let i = 0; i < totalItems; i++) {
+                const dot = document.createElement('button');
+                dot.style.cssText = 'width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;transition:all 0.3s;background:rgba(255,255,255,0.3)';
+                dot.onclick = () => goToSlide(i);
+                dotsContainer.appendChild(dot);
+              }
+              
+              const dots = dotsContainer.querySelectorAll('button');
+              
+              // Função para obter largura do item + gap
+              function getItemWidth() {
+                return allItems[0].offsetWidth + 20;
+              }
+              
+              // Função para atualizar posição
+              function updateCarousel(withTransition = true) {
+                const itemWidth = getItemWidth();
+                const wrapper = document.getElementById('carouselWrapper');
+                const wrapperWidth = wrapper.offsetWidth;
+                
+                // Desabilitar transição se especificado
+                if (!withTransition) {
+                  track.style.transition = 'none';
+                } else {
+                  track.style.transition = 'transform 0.5s ease-in-out';
+                }
+                
+                // Calcular offset - SEMPRE centralizar em mobile
+                let offset = 0;
+                if (window.innerWidth < 768) {
+                  // Mobile: SEMPRE centralizar 1 item apenas
+                  const itemWidthMobile = allItems[0].offsetWidth;
+                  const centerOffset = (wrapperWidth - itemWidthMobile) / 2;
+                  offset = -(currentIndex * (itemWidthMobile + 20)) + centerOffset;
+                } else if (window.innerWidth < 1200) {
+                  // Tablet: mostrar 2 itens
+                  offset = -(currentIndex * itemWidth);
+                } else {
+                  // Desktop: mostrar 3 itens
+                  offset = -(currentIndex * itemWidth);
+                }
+                
+                track.style.transform = `translateX(${offset}px)`;
+                
+                // Atualizar dots (mapear currentIndex para índice real)
+                const realIndex = ((currentIndex - 3) % totalItems + totalItems) % totalItems;
+                dots.forEach((dot, i) => {
+                  dot.style.background = i === realIndex ? 'rgb(255,246,0)' : 'rgba(255,255,255,0.3)';
+                  dot.style.width = i === realIndex ? '30px' : '10px';
+                });
+                
+                // Re-habilitar transição após um frame
+                if (!withTransition) {
+                  setTimeout(() => {
+                    track.style.transition = 'transform 0.5s ease-in-out';
+                  }, 50);
+                }
+              }
+              
+              // Função de navegação
+              window.moveCarousel = function(direction) {
+                if (isTransitioning) return;
+                
+                isTransitioning = true;
+                currentIndex += direction;
+                
+                updateCarousel(true);
+                
+                // Detectar se chegou nos clones e resetar
+                setTimeout(() => {
+                  if (currentIndex >= totalItems + 3) {
+                    // Chegou no final, voltar para o início (sem transição)
+                    currentIndex = 3;
+                    updateCarousel(false);
+                  } else if (currentIndex < 3) {
+                    // Chegou no início, ir para o final (sem transição)
+                    currentIndex = totalItems + 2;
+                    updateCarousel(false);
+                  }
+                  isTransitioning = false;
+                }, 500);
+                
+                resetAutoPlay();
+              };
+              
+              // Ir para slide específico
+              function goToSlide(index) {
+                if (isTransitioning) return;
+                
+                currentIndex = index + 3; // +3 por causa dos clones no início
+                updateCarousel(true);
+                resetAutoPlay();
+              }
+              
+              // Auto-play
+              function startAutoPlay() {
+                autoPlayInterval = setInterval(() => {
+                  moveCarousel(1);
+                }, 3000);
+              }
+              
+              function resetAutoPlay() {
+                clearInterval(autoPlayInterval);
+                startAutoPlay();
+              }
+              
+              // Interação com botões e FORÇAR estilos
+              const prevBtn = document.getElementById('prevBtn');
+              const nextBtn = document.getElementById('nextBtn');
+              
+              // FORÇAR estilos via JavaScript (garantia extra)
+              function forceButtonStyles() {
+                if (prevBtn && nextBtn) {
+                  const isMobile = window.innerWidth < 768;
+                  const size = isMobile ? '46px' : '50px';
+                  
+                  [prevBtn, nextBtn].forEach(btn => {
+                    btn.style.cssText = `
+                      position: absolute !important;
+                      top: 50% !important;
+                      width: ${size} !important;
+                      height: ${size} !important;
+                      min-width: ${size} !important;
+                      min-height: ${size} !important;
+                      max-width: ${size} !important;
+                      max-height: ${size} !important;
+                      border-radius: 50% !important;
+                      background: rgb(255,246,0) !important;
+                      border: 2px solid rgba(0,0,0,0.2) !important;
+                      box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
+                      display: flex !important;
+                      align-items: center !important;
+                      justify-content: center !important;
+                      font-size: ${isMobile ? '24px' : '30px'} !important;
+                      font-weight: bold !important;
+                      color: rgb(0,0,0) !important;
+                      cursor: pointer !important;
+                      z-index: 100 !important;
+                      padding: 0 !important;
+                      margin: 0 !important;
+                      box-sizing: border-box !important;
+                      transform: translateY(-50%) !important;
+                      transition: all 0.3s ease !important;
+                    `;
+                  });
+                  
+                  prevBtn.style.left = '10px';
+                  nextBtn.style.right = '10px';
+                }
+              }
+              
+              // Aplicar estilos imediatamente e no resize
+              forceButtonStyles();
+              window.addEventListener('resize', forceButtonStyles);
+              
+              // Garantir visibilidade dos botões
+              if (prevBtn && nextBtn) {
+                [prevBtn, nextBtn].forEach(btn => {
+                  // Hover
+                  btn.addEventListener('mouseenter', function() {
+                    this.style.background = 'rgb(255,255,100)';
+                    this.style.transform = 'translateY(-50%) scale(1.15)';
+                    this.style.boxShadow = '0 8px 25px rgba(0,0,0,0.5)';
+                  });
+                  
+                  btn.addEventListener('mouseleave', function() {
+                    this.style.background = 'rgb(255,246,0)';
+                    this.style.transform = 'translateY(-50%) scale(1)';
+                    this.style.boxShadow = '0 6px 20px rgba(0,0,0,0.4)';
+                  });
+                  
+                  // Touch feedback para mobile
+                  btn.addEventListener('touchstart', function(e) {
+                    this.style.transform = 'translateY(-50%) scale(0.95)';
+                    this.style.background = 'rgb(255,255,100)';
+                  });
+                  
+                  btn.addEventListener('touchend', function(e) {
+                    this.style.transform = 'translateY(-50%) scale(1)';
+                    this.style.background = 'rgb(255,246,0)';
+                  });
+                });
+              }
+              
+              // Inicializar
+              updateCarousel(false); // Posicionar inicialmente sem transição
+              startAutoPlay();
+              
+              // Atualizar no resize
+              let resizeTimeout;
+              window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                  updateCarousel(false);
+                }, 100);
+              });
+              
+              // Suporte touch para mobile
+              let touchStartX = 0;
+              let touchEndX = 0;
+              
+              track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+              }, { passive: true });
+              
+              track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+              }, { passive: true });
+              
+              function handleSwipe() {
+                const swipeThreshold = 50;
+                const diff = touchStartX - touchEndX;
+                
+                if (Math.abs(diff) > swipeThreshold) {
+                  if (diff > 0) {
+                    // Swipe left - próximo
+                    moveCarousel(1);
+                  } else {
+                    // Swipe right - anterior
+                    moveCarousel(-1);
+                  }
+                }
+              }
+            })();
+          </script>
           <!-- ======================================== FIM BLOCO 2 ======================================== -->
           
           <!-- ========================================
