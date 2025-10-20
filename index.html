@@ -15297,6 +15297,97 @@
        ======================================== */
     
     /* ========================================
+       BLOCO 13: GARANTIA - RESPONSIVIDADE (DESIGN MONETISE)
+       ======================================== */
+    
+    /* Mobile (< 768px) */
+    @media (max-width: 767px) {
+      .framer-bloco13-garantia {
+        padding: 60px 16px !important;
+      }
+      
+      .bloco13-card {
+        padding: 40px 26px !important;
+        border-radius: 28px !important;
+      }
+      
+      .bloco13-seal {
+        margin-bottom: 32px !important;
+      }
+      
+      .bloco13-seal svg {
+        width: 140px !important;
+        height: 140px !important;
+      }
+      
+      .bloco13-title {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 28px !important;
+        letter-spacing: -0.5px !important;
+      }
+      
+      .bloco13-desc {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 24px !important;
+      }
+      
+      .bloco13-risk {
+        font-size: 17px !important;
+        margin-bottom: 32px !important;
+      }
+      
+      .bloco13-cta {
+        padding: 16px 50px !important;
+        font-size: 15px !important;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    /* Mobile pequeno (< 480px) */
+    @media (max-width: 479px) {
+      .framer-bloco13-garantia {
+        padding: 50px 14px !important;
+      }
+      
+      .bloco13-card {
+        padding: 32px 20px !important;
+        border-radius: 24px !important;
+      }
+      
+      .bloco13-seal svg {
+        width: 120px !important;
+        height: 120px !important;
+      }
+      
+      .bloco13-title {
+        font-size: 28px !important;
+        margin-bottom: 24px !important;
+      }
+      
+      .bloco13-desc {
+        font-size: 15px !important;
+        margin-bottom: 20px !important;
+      }
+      
+      .bloco13-risk {
+        font-size: 16px !important;
+        margin-bottom: 28px !important;
+      }
+      
+      .bloco13-cta {
+        padding: 15px 40px !important;
+        font-size: 14px !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BLOCO 13 - RESPONSIVIDADE
+       ======================================== */
+    
+    /* ========================================
        BLOCO 2: CARROSSEL DE PROVAS SOCIAIS - RESPONSIVIDADE
        ======================================== */
     
@@ -17777,86 +17868,63 @@
           <!-- ======================================== FIM BLOCO 12 ======================================== -->
           
           <!-- ========================================
-               BLOCO 13: GARANTIA 10X SEU INVESTIMENTO
-               - Card com fundo gradiente dourado/marrom
+               BLOCO 13: GARANTIA 10X SEU INVESTIMENTO (DESIGN MONETISE)
+               - Card com fundo dourado/marrom (Design exato Monetise)
                - Selo "100% SATISFACTION GUARANTEE"
                - Título e descrição da garantia
-               - Botão CTA "Entre para o fora da lei"
+               - Botão CTA amarelo-limão
                ======================================== -->
-          <div class="framer-bloco13-garantia" style="width:100%;background-color:rgb(0,0,0);padding:100px 20px">
-            <div style="max-width:1100px;margin:0 auto">
+          <div class="framer-bloco13-garantia" style="width:100%;background-color:rgb(0,0,0);padding:80px 20px">
+            <div style="max-width:680px;margin:0 auto">
               
-              <!-- Card Principal com Fundo Dourado -->
-              <div style="background:linear-gradient(135deg, rgba(80,60,30,0.9) 0%, rgba(40,30,15,0.95) 100%);border:3px solid rgb(180,140,70);border-radius:40px;padding:70px 60px;position:relative;box-shadow:0 30px 90px rgba(180,140,70,0.3)">
+              <!-- Card Principal - Design Monetise -->
+              <div class="bloco13-card" style="background:linear-gradient(135deg, rgba(75,60,35,1) 0%, rgba(50,40,25,1) 100%);border:2px solid rgba(200,160,90,0.6);border-radius:36px;padding:55px 45px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.7)">
                 
-                <!-- Selo "100% SATISFACTION GUARANTEE" -->
-                <div style="display:flex;justify-content:center;margin-bottom:50px">
-                  <div style="position:relative;width:200px;height:200px">
-                    <!-- Círculo externo serrilhado (efeito de selo) -->
-                    <svg viewBox="0 0 200 200" style="position:absolute;width:200px;height:200px">
+                <!-- Selo "100% SATISFACTION GUARANTEE" - Design Monetise -->
+                <div class="bloco13-seal" style="display:flex;justify-content:center;margin-bottom:40px">
+                  <div style="position:relative;width:180px;height:180px">
+                    <!-- Círculo externo dourado serrilhado -->
+                    <svg viewBox="0 0 200 200" style="position:absolute;width:180px;height:180px;left:0;top:0">
                       <defs>
                         <radialGradient id="sealGradient" cx="50%" cy="50%" r="50%">
-                          <stop offset="0%" style="stop-color:rgb(220,180,100);stop-opacity:1" />
-                          <stop offset="100%" style="stop-color:rgb(180,140,70);stop-opacity:1" />
+                          <stop offset="0%" style="stop-color:rgb(210,170,90);stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:rgb(170,130,60);stop-opacity:1" />
                         </radialGradient>
                       </defs>
-                      <!-- Círculo serrilhado -->
-                      <circle cx="100" cy="100" r="95" fill="url(#sealGradient)"/>
-                      <!-- Pontas do selo -->
-                      <circle cx="100" cy="5" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="135" cy="10" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="165" cy="25" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="185" cy="50" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="195" cy="85" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="195" cy="115" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="185" cy="150" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="165" cy="175" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="135" cy="190" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="100" cy="195" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="65" cy="190" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="35" cy="175" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="15" cy="150" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="5" cy="115" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="5" cy="85" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="15" cy="50" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="35" cy="25" r="8" fill="url(#sealGradient)"/>
-                      <circle cx="65" cy="10" r="8" fill="url(#sealGradient)"/>
+                      <!-- Estrela serrilhada externa (20 pontas) -->
+                      <path d="M100,5 L106,40 L115,10 L116,45 L130,18 L126,53 L145,30 L136,63 L158,45 L145,75 L168,62 L152,88 L175,82 L157,100 L175,118 L152,112 L168,138 L145,125 L158,155 L136,137 L145,170 L126,147 L130,182 L116,155 L115,190 L106,160 L100,195 L94,160 L85,190 L84,155 L70,182 L74,147 L55,170 L64,137 L42,155 L55,125 L32,138 L48,112 L25,118 L43,100 L25,82 L48,88 L32,62 L55,75 L42,45 L64,63 L55,30 L74,53 L70,18 L84,45 L85,10 L94,40Z" fill="url(#sealGradient)"/>
                       <!-- Círculo interno preto -->
-                      <circle cx="100" cy="100" r="75" fill="rgb(20,15,10)"/>
+                      <circle cx="100" cy="100" r="70" fill="rgb(25,20,15)"/>
                     </svg>
                     <!-- Texto do selo -->
-                    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:100%">
-                      <div style="color:rgb(220,180,100);font-size:13px;font-weight:700;letter-spacing:2px;margin-bottom:5px;text-transform:uppercase">SATISFACTION</div>
-                      <div style="display:flex;justify-content:center;align-items:center;gap:5px;margin-bottom:5px">
-                        <span style="color:rgb(220,180,100);font-size:12px">★★★</span>
-                      </div>
-                      <div style="color:rgb(220,180,100);font-size:42px;font-weight:900;line-height:1">100%</div>
-                      <div style="display:flex;justify-content:center;align-items:center;gap:5px;margin-top:5px">
-                        <span style="color:rgb(220,180,100);font-size:12px">★★★</span>
-                      </div>
-                      <div style="color:rgb(220,180,100);font-size:13px;font-weight:700;letter-spacing:2px;margin-top:5px;text-transform:uppercase">GUARANTEE</div>
+                    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:100%;z-index:1">
+                      <div style="color:rgb(210,170,90);font-size:12px;font-weight:700;letter-spacing:1.5px;margin-bottom:4px;text-transform:uppercase">SATISFACTION</div>
+                      <div style="color:rgb(210,170,90);font-size:10px;margin-bottom:6px">★★★</div>
+                      <div style="color:rgb(210,170,90);font-size:38px;font-weight:900;line-height:1;margin-bottom:6px">100%</div>
+                      <div style="color:rgb(210,170,90);font-size:10px;margin-bottom:4px">★★★</div>
+                      <div style="color:rgb(210,170,90);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase">GUARANTEE</div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Título Principal -->
-                <h2 style="color:rgb(220,180,100);font-size:52px;font-weight:700;line-height:1.2;text-align:center;margin-bottom:40px;letter-spacing:-0.5px">
+                <!-- Título Principal - Estilo Monetise -->
+                <h2 class="bloco13-title" style="color:rgb(210,170,90);font-size:48px;font-weight:700;line-height:1.15;text-align:center;margin-bottom:35px;letter-spacing:-1px">
                   10x seu investimento ou trabalharemos com você até que você faça isso
                 </h2>
 
                 <!-- Descrição -->
-                <p style="color:rgb(230,220,210);font-size:19px;line-height:1.7;text-align:center;margin-bottom:30px;max-width:850px;margin-left:auto;margin-right:auto">
-                  Se você não obtiver um retorno de 10x sobre seu investimento com o Fora da Lei em 12 meses, minha equipe e eu trabalharemos pessoalmente com você até que isso aconteça, por até 3 anos.
+                <p class="bloco13-desc" style="color:rgb(245,240,235);font-size:17px;line-height:1.65;text-align:center;margin-bottom:28px">
+                  Se você não obtiver um retorno de 10x sobre seu investimento com o Fora da Lei em 12 meses, minha equipe e eu trabalharemos pessoalmente com você até que isso aconteça, <strong style="color:rgb(255,255,255)">por até 3 anos.</strong>
                 </p>
 
                 <!-- Texto Final -->
-                <p style="color:rgb(230,220,210);font-size:20px;font-weight:600;text-align:center;margin-bottom:45px">
+                <p class="bloco13-risk" style="color:rgb(245,240,235);font-size:18px;font-weight:500;text-align:center;margin-bottom:38px">
                   O risco é todo nosso.
                 </p>
 
-                <!-- Botão CTA -->
+                <!-- Botão CTA - Estilo Monetise -->
                 <div style="display:flex;justify-content:center">
-                  <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:22px;font-weight:800;padding:20px 140px;border-radius:15px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;box-shadow:0 12px 45px rgba(255,246,0,0.5);text-transform:uppercase">
+                  <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" class="bloco13-cta" style="background-color:rgb(215,255,80);color:rgb(0,0,0);font-size:17px;font-weight:700;padding:18px 110px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:0.5px;box-shadow:0 8px 25px rgba(215,255,80,0.35);text-transform:uppercase">
                     Entre para o fora da lei
                   </a>
                 </div>
