@@ -14228,7 +14228,7 @@
       }
       
       .framer-5Ur0r.framer-zSl54 .framer-13kw9gv p {
-        font-size: 18px !important;
+        font-size: 20px !important;
       }
     }
     
@@ -14365,11 +14365,11 @@
       }
       
       .framer-novo-bloco3-container a[href*="kirvano"] {
-        font-size: 17px !important;
-        padding: 17px 50px !important;
+        font-size: 16px !important;
+        padding: 16px 40px !important;
         width: 100% !important;
         max-width: 100% !important;
-        letter-spacing: 0.4px !important;
+        letter-spacing: 1px !important;
       }
     }
     
@@ -14432,10 +14432,10 @@
       
       .framer-novo-bloco3-container a[href*="kirvano"] {
         font-size: 20px !important;
-        padding: 18px 120px !important;
+        padding: 20px 60px !important;
         width: auto !important;
         display: inline-block !important;
-        letter-spacing: 0.5px !important;
+        letter-spacing: 1px !important;
       }
     }
     
@@ -15745,6 +15745,119 @@
        FIM BLOCO 2 - RESPONSIVIDADE
        ======================================== */
     
+    /* ========================================
+       PADRONIZAÇÃO DE BOTÕES CTA
+       ======================================== */
+    
+    /* Estilo base para todos os botões CTA */
+    a[href*="kirvano"] {
+      background-color: rgb(255, 246, 0) !important;
+      color: rgb(0, 0, 0) !important;
+      font-size: 20px !important;
+      font-weight: 700 !important;
+      padding: 20px 60px !important;
+      border-radius: 12px !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      text-transform: uppercase !important;
+      letter-spacing: 1px !important;
+      box-shadow: 0 10px 40px rgba(255, 246, 0, 0.4) !important;
+      transition: all 0.3s ease !important;
+      cursor: pointer !important;
+      border: none !important;
+      text-align: center !important;
+      font-family: 'Inter Display', 'Inter', sans-serif !important;
+      line-height: 1.4 !important;
+    }
+    
+    /* Estilo para os divs internos dos botões Framer */
+    .framer-ow3yem {
+      background-color: rgb(255, 246, 0) !important;
+      border-radius: 12px !important;
+      padding: 20px 60px !important;
+      box-shadow: 0 10px 40px rgba(255, 246, 0, 0.4) !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    /* Hover effect */
+    a[href*="kirvano"]:hover {
+      transform: translateY(-2px) !important;
+      box-shadow: 0 6px 30px rgba(255, 246, 0, 0.6) !important;
+    }
+    
+    /* Active/Click effect */
+    a[href*="kirvano"]:active {
+      transform: translateY(0) !important;
+      box-shadow: 0 2px 10px rgba(255, 246, 0, 0.3) !important;
+    }
+    
+    /* Botões dentro de divs específicas */
+    .framer-ow3yem,
+    .framer-13kw9gv p {
+      font-size: 20px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 1px !important;
+    }
+    
+    /* Estilos base para botões 1 e 2 */
+    .btn-cta-bloco1,
+    .btn-cta-bloco2 {
+      font-size: 20px !important;
+      padding: 20px 60px !important;
+    }
+    
+    /* Responsividade dos botões */
+    @media (max-width: 1199px) {
+      a[href*="kirvano"],
+      .framer-ow3yem,
+      .btn-cta-bloco1,
+      .btn-cta-bloco2 {
+        font-size: 18px !important;
+        padding: 18px 50px !important;
+      }
+      
+      .framer-13kw9gv p {
+        font-size: 20px !important;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      a[href*="kirvano"],
+      .framer-ow3yem,
+      .btn-cta-bloco1,
+      .btn-cta-bloco2 {
+        font-size: 16px !important;
+        padding: 16px 40px !important;
+        letter-spacing: 1px !important;
+      }
+      
+      .framer-13kw9gv p {
+        font-size: 16px !important;
+      }
+    }
+    
+    @media (max-width: 479px) {
+      a[href*="kirvano"],
+      .framer-ow3yem,
+      .btn-cta-bloco1,
+      .btn-cta-bloco2 {
+        font-size: 15px !important;
+        padding: 15px 35px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        letter-spacing: 1px !important;
+      }
+      
+      .framer-13kw9gv p {
+        font-size: 15px !important;
+      }
+    }
+    
+    /* ========================================
+       FIM PADRONIZAÇÃO DE BOTÕES CTA
+       ======================================== */
+    
     /* Melhorias para Desktop (1200px+) */
     @media (min-width: 1200px) {
       .framer-bloco5-treinamento,
@@ -16199,20 +16312,9 @@
                       </div>
                       
                       <!-- Botão CTA -->
-                      <div class="framer-zokn0e-container" data-framer-name="CTA Button" name="CTA Button" style="width:100%;max-width:400px;margin-top:20px">
-                        <a name="CTA Button"
-                          class="framer-XRNbx framer-1m7b9j framer-v-1rh8rth framer-17z2f5a"
-                          data-framer-name="Small Button" data-highlight="true" tabindex="0" href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161"
-                          style="display:block;width:100%;text-decoration:none">
-                          <div class="framer-ow3yem" data-framer-name="Main Button"
-                            style="background-color:rgb(255, 246, 0);border-radius:12px;padding:20px 50px;transform:none;box-shadow:0 4px 20px rgba(255, 246, 0, 0.4);transition:all 0.3s ease">
-                            <div class="framer-tuhgk3" data-framer-name="Text">
-                              <div class="framer-13kw9gv" data-framer-component-type="RichTextContainer"
-                                style="transform:none">
-                                <p class="framer-text" style="font-family: 'Inter Display', sans-serif; font-size: 22px; font-weight: 700; line-height: 1.4; text-align: center; color: rgb(0, 0, 0); margin: 0; text-transform: uppercase; letter-spacing: 1px;">Entre para o fora da lei</p>
-                              </div>
-                            </div>
-                          </div>
+                      <div style="display:flex;justify-content:center;margin-top:20px">
+                        <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" class="btn-cta-bloco1" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-weight:700;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 40px rgba(255,246,0,0.4)">
+                          Entre para o Fora da Lei
                         </a>
                       </div>
                       
@@ -16328,21 +16430,10 @@
                 </div>
 
                 <!-- Botão CTA -->
-                <div class="framer-13j5zto" data-framer-name="CTA" style="display:flex;justify-content:center">
-                  <div class="framer-1f54xd7-container" style="max-width:400px;width:100%">
-                    <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" 
-                       class="framer-XRNbx framer-1m7b9j framer-v-1rh8rth framer-17z2f5a" data-framer-name="Small Button"
-                      data-highlight="true" tabindex="0" style="max-width:100%;width:100%;text-decoration:none;cursor:pointer;display:block">
-                      <div class="framer-ow3yem" data-framer-name="Main Button"
-                        style="background-color:rgb(255, 246, 0);border-radius:16px;padding:18px 40px;transition:all 0.3s;box-shadow:0 4px 20px rgba(255,246,0,0.3)">
-                        <div class="framer-tuhgk3" data-framer-name="Text">
-                          <p class="framer-text" style="color:rgb(0, 0, 0);font-size:22px;font-weight:700;text-align:center;margin:0;text-transform:uppercase;letter-spacing:1px">
-                            Entre para o fora da lei
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+                <div style="display:flex;justify-content:center;margin-top:30px">
+                  <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" class="btn-cta-bloco2" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-weight:700;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 40px rgba(255,246,0,0.4)">
+                    Entre para o Fora da Lei
+                  </a>
                 </div>
                 
               </div>
@@ -16717,8 +16808,8 @@
 
               <!-- Botão CTA -->
               <div style="display:flex;justify-content:center">
-                <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:18px 120px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:0.5px">
-                  Entre para o fora da lei
+                <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:20px 60px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 40px rgba(255,246,0,0.4)">
+                  Entre para o Fora da Lei
                 </a>
               </div>
 
@@ -16952,8 +17043,8 @@
 
               <!-- Botão CTA -->
               <div style="display:flex;justify-content:center">
-                <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:18px 120px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:0.5px">
-                  Entre para o fora da lei
+                <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:20px 60px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 40px rgba(255,246,0,0.4)">
+                  Entre para o Fora da Lei
                 </a>
               </div>
 
@@ -17390,8 +17481,8 @@
 
               <!-- Botão CTA Final -->
               <div style="display:flex;justify-content:center">
-                <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:18px 120px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:0.5px;box-shadow:0 10px 40px rgba(255,246,0,0.3)">
-                  Entre para o fora da lei
+                <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:20px 60px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 40px rgba(255,246,0,0.4)">
+                  Entre para o Fora da Lei
                 </a>
               </div>
 
@@ -17434,7 +17525,7 @@
                   
                   <!-- Imagem dos Relógios -->
                   <div style="display:flex;justify-content:center">
-                    <img src="images/assets/rolex.png" alt="Rolex de R$ 40 mil" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 20px 60px rgba(75,174,250,0.4));mix-blend-mode:lighten;background:transparent" />
+                    <img src="images/assets/6.png" alt="Rolex de R$ 40 mil" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 20px 60px rgba(75,174,250,0.4));mix-blend-mode:lighten;background:transparent" />
                   </div>
                 </div>
               </div>
@@ -17454,7 +17545,7 @@
                       5 MACBOOKS
                     </h4>
                     <div style="display:flex;justify-content:center">
-                      <img src="images/assets/macbooks.png" alt="5 Macbooks" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 15px 40px rgba(75,174,250,0.3));mix-blend-mode:lighten;background:transparent" />
+                      <img src="images/assets/7.png" alt="5 Macbooks" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 15px 40px rgba(75,174,250,0.3));mix-blend-mode:lighten;background:transparent" />
                     </div>
                   </div>
                 </div>
@@ -17471,7 +17562,7 @@
                       5 IPHONES 17
                     </h4>
                     <div style="display:flex;justify-content:center">
-                      <img src="images/assets/iphones.png" alt="5 iPhones 17" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 15px 40px rgba(75,174,250,0.3));mix-blend-mode:lighten;background:transparent" />
+                      <img src="images/assets/8.png" alt="5 iPhones 17" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 15px 40px rgba(75,174,250,0.3));mix-blend-mode:lighten;background:transparent" />
                     </div>
                   </div>
                 </div>
@@ -17480,8 +17571,8 @@
 
               <!-- Botão CTA Final -->
               <div style="display:flex;justify-content:center">
-                <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:18px 120px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:0.5px;box-shadow:0 10px 40px rgba(255,246,0,0.4);text-transform:uppercase">
-                  Entre para o fora da lei
+                <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:20px 60px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 40px rgba(255,246,0,0.4)">
+                  Entre para o Fora da Lei
                 </a>
               </div>
 
@@ -17880,8 +17971,8 @@
 
                 <!-- Botão CTA - Estilo Monetise -->
                 <div style="display:flex;justify-content:center">
-                  <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" class="bloco12-cta" style="background-color:rgb(215,255,80);color:rgb(0,0,0);font-size:17px;font-weight:700;padding:18px 110px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:0.5px;box-shadow:0 8px 25px rgba(215,255,80,0.35);text-transform:uppercase">
-                    Entre para o fora da lei
+                  <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" class="bloco12-cta" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:20px 60px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 40px rgba(255,246,0,0.4)">
+                    Entre para o Fora da Lei
                   </a>
                 </div>
 
@@ -17948,8 +18039,8 @@
 
                 <!-- Botão CTA - Estilo Monetise -->
                 <div style="display:flex;justify-content:center">
-                  <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" class="bloco13-cta" style="background-color:rgb(215,255,80);color:rgb(0,0,0);font-size:17px;font-weight:700;padding:18px 110px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:0.5px;box-shadow:0 8px 25px rgba(215,255,80,0.35);text-transform:uppercase">
-                    Entre para o fora da lei
+                  <a href="https://pay.kirvano.com/2b238515-4899-45ec-9130-ecc219d9b161" class="bloco13-cta" style="background-color:rgb(255,246,0);color:rgb(0,0,0);font-size:20px;font-weight:700;padding:20px 60px;border-radius:12px;text-decoration:none;display:inline-block;transition:all 0.2s;letter-spacing:1px;box-shadow:0 8px 25px rgba(255,246,0,0.4);text-transform:uppercase">
+                    Entre para o Fora da Lei
                   </a>
                 </div>
 
