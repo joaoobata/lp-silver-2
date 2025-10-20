@@ -14549,6 +14549,304 @@
        ======================================== */
     
     /* ========================================
+       BLOCO 9: PRÊMIOS - REMOVER FUNDO DAS IMAGENS
+       ======================================== */
+    
+    .framer-bloco9-premios img[src*="rolex"],
+    .framer-bloco9-premios img[src*="macbooks"],
+    .framer-bloco9-premios img[src*="iphones"] {
+      mix-blend-mode: lighten !important;
+      background: transparent !important;
+      isolation: isolate;
+    }
+    
+    /* Alternativa: Usar screen para fundos muito escuros */
+    @supports (mix-blend-mode: screen) {
+      .framer-bloco9-premios img[src*="rolex"],
+      .framer-bloco9-premios img[src*="macbooks"],
+      .framer-bloco9-premios img[src*="iphones"] {
+        mix-blend-mode: screen !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BLOCO 9 - REMOÇÃO DE FUNDO
+       ======================================== */
+    
+    /* ========================================
+       BLOCO 10: CONFIE NO CÉREBRO - RESPONSIVIDADE
+       ======================================== */
+    
+    /* Mobile pequeno (<480px) */
+    @media (max-width: 479px) {
+      .framer-bloco10-confiar-cerebro {
+        padding: 60px 15px !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro > div > div[style*="grid-template-columns"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 40px !important;
+      }
+      
+      /* Ocultar linha divisória no mobile */
+      .framer-bloco10-confiar-cerebro > div > div[style*="grid-template-columns"] > div:nth-child(2) {
+        display: none !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro h2 {
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        line-height: 36px !important;
+        letter-spacing: -2px !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro h3 {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        line-height: 24px !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro p {
+        font-size: 15px !important;
+        line-height: 24px !important;
+        color: rgb(242, 249, 254) !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro > div > div[style*="grid-template-columns"] > div:last-child {
+        gap: 30px !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro > div > div[style*="grid-template-columns"] > div:last-child > div {
+        padding-left: 15px !important;
+        border-left: 3px solid rgb(75, 174, 250) !important;
+      }
+    }
+    
+    /* Mobile médio (480-767px) */
+    @media (min-width: 480px) and (max-width: 767px) {
+      .framer-bloco10-confiar-cerebro {
+        padding: 70px 20px !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro > div > div[style*="grid-template-columns"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 45px !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro > div > div[style*="grid-template-columns"] > div:nth-child(2) {
+        display: none !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro h2 {
+        font-size: 36px !important;
+        font-weight: 600 !important;
+        line-height: 40px !important;
+        letter-spacing: -1.5px !important;
+        text-align: center !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro h3 {
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        line-height: 26.4px !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro p {
+        font-size: 16px !important;
+        line-height: 25.6px !important;
+        color: rgb(242, 249, 254) !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro > div > div[style*="grid-template-columns"] > div:last-child > div {
+        padding-left: 20px !important;
+        border-left: 3px solid rgb(75, 174, 250) !important;
+      }
+    }
+    
+    /* Tablet (768-1199px) */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .framer-bloco10-confiar-cerebro h2 {
+        font-size: 42px !important;
+        line-height: 1.15 !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro h3 {
+        font-size: 24px !important;
+        font-weight: 600 !important;
+        line-height: 28.8px !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro p {
+        font-size: 16px !important;
+        line-height: 25.6px !important;
+        color: rgb(242, 249, 254) !important;
+      }
+    }
+    
+    /* Desktop (≥1200px) */
+    @media (min-width: 1200px) {
+      .framer-bloco10-confiar-cerebro h3 {
+        font-size: 26px !important;
+        font-weight: 600 !important;
+      }
+      
+      .framer-bloco10-confiar-cerebro p {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        color: rgb(220, 220, 225) !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BLOCO 10 - RESPONSIVIDADE
+       ======================================== */
+    
+    /* ========================================
+       BLOCO 11: PARA QUEM É - RESPONSIVIDADE
+       ======================================== */
+    
+    /* Mobile pequeno (<480px) */
+    @media (max-width: 479px) {
+      .framer-bloco11-para-quem {
+        padding: 60px 15px !important;
+      }
+      
+      /* Badge estilo mobile */
+      .framer-bloco11-para-quem > div > div:first-child span {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        padding: 10px 20px !important;
+        letter-spacing: 0.5px !important;
+      }
+      
+      /* Ocultar linha divisória vertical central */
+      .framer-bloco11-para-quem > div > div[style*="position: relative"] > div[style*="position: absolute"] {
+        display: none !important;
+      }
+      
+      /* Grid vira coluna única */
+      .framer-bloco11-para-quem > div > div[style*="position: relative"] > div[style*="grid-template-columns"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 35px !important;
+      }
+      
+      /* Todos os cards com border-left azul */
+      .framer-bloco11-para-quem > div > div[style*="position: relative"] > div[style*="grid-template-columns"] > div {
+        border-left: 3px solid rgb(75, 174, 250) !important;
+        padding-left: 20px !important;
+        margin-top: 0 !important;
+      }
+      
+      /* Títulos H3 */
+      .framer-bloco11-para-quem h3 {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        line-height: 24px !important;
+        letter-spacing: -1px !important;
+      }
+      
+      /* Ícones menores */
+      .framer-bloco11-para-quem h3 + div,
+      .framer-bloco11-para-quem > div > div[style*="grid-template-columns"] > div > div:first-child > div:first-child {
+        width: 45px !important;
+        height: 45px !important;
+      }
+      
+      .framer-bloco11-para-quem h3 + div svg,
+      .framer-bloco11-para-quem > div > div[style*="grid-template-columns"] > div > div:first-child > div:first-child svg {
+        width: 24px !important;
+        height: 24px !important;
+      }
+      
+      /* Parágrafos */
+      .framer-bloco11-para-quem p {
+        font-size: 15px !important;
+        line-height: 24px !important;
+        color: rgb(242, 249, 254) !important;
+      }
+    }
+    
+    /* Mobile médio (480-767px) */
+    @media (min-width: 480px) and (max-width: 767px) {
+      .framer-bloco11-para-quem {
+        padding: 70px 20px !important;
+      }
+      
+      .framer-bloco11-para-quem > div > div:first-child span {
+        font-size: 13px !important;
+        padding: 11px 24px !important;
+      }
+      
+      .framer-bloco11-para-quem > div > div[style*="position: relative"] > div[style*="position: absolute"] {
+        display: none !important;
+      }
+      
+      .framer-bloco11-para-quem > div > div[style*="position: relative"] > div[style*="grid-template-columns"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 40px !important;
+      }
+      
+      .framer-bloco11-para-quem > div > div[style*="position: relative"] > div[style*="grid-template-columns"] > div {
+        border-left: 3px solid rgb(75, 174, 250) !important;
+        padding-left: 25px !important;
+        margin-top: 0 !important;
+      }
+      
+      .framer-bloco11-para-quem h3 {
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        line-height: 26.4px !important;
+        letter-spacing: -1px !important;
+      }
+      
+      .framer-bloco11-para-quem p {
+        font-size: 16px !important;
+        line-height: 25.6px !important;
+        color: rgb(242, 249, 254) !important;
+      }
+    }
+    
+    /* Tablet (768-1199px) */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .framer-bloco11-para-quem h3 {
+        font-size: 24px !important;
+        font-weight: 600 !important;
+        line-height: 28.8px !important;
+        letter-spacing: -1px !important;
+      }
+      
+      .framer-bloco11-para-quem p {
+        font-size: 16px !important;
+        line-height: 25.6px !important;
+        color: rgb(242, 249, 254) !important;
+      }
+    }
+    
+    /* Desktop (≥1200px) */
+    @media (min-width: 1200px) {
+      .framer-bloco11-para-quem h3 {
+        font-size: 28px !important;
+        font-weight: 600 !important;
+      }
+      
+      .framer-bloco11-para-quem p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+        color: rgb(220, 220, 225) !important;
+      }
+    }
+    
+    /* ========================================
+       FIM BLOCO 11 - RESPONSIVIDADE
+       ======================================== */
+    
+    /* ========================================
        BLOCO 2: CARROSSEL DE PROVAS SOCIAIS - RESPONSIVIDADE
        ======================================== */
     
@@ -16575,7 +16873,7 @@
                   
                   <!-- Imagem dos Relógios -->
                   <div style="display:flex;justify-content:center">
-                    <img src="images/assets/rolex.png" alt="Rolex de R$ 40 mil" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 20px 60px rgba(75,174,250,0.4))" />
+                    <img src="images/assets/rolex.png" alt="Rolex de R$ 40 mil" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 20px 60px rgba(75,174,250,0.4));mix-blend-mode:lighten;background:transparent" />
                   </div>
                 </div>
               </div>
@@ -16595,7 +16893,7 @@
                       5 MACBOOKS
                     </h4>
                     <div style="display:flex;justify-content:center">
-                      <img src="images/assets/macbooks.png" alt="5 Macbooks" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 15px 40px rgba(75,174,250,0.3))" />
+                      <img src="images/assets/macbooks.png" alt="5 Macbooks" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 15px 40px rgba(75,174,250,0.3));mix-blend-mode:lighten;background:transparent" />
                     </div>
                   </div>
                 </div>
@@ -16612,7 +16910,7 @@
                       5 IPHONES 17
                     </h4>
                     <div style="display:flex;justify-content:center">
-                      <img src="images/assets/iphones.png" alt="5 iPhones 17" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 15px 40px rgba(75,174,250,0.3))" />
+                      <img src="images/assets/iphones.png" alt="5 iPhones 17" style="max-width:100%;height:auto;display:block;filter:drop-shadow(0 15px 40px rgba(75,174,250,0.3));mix-blend-mode:lighten;background:transparent" />
                     </div>
                   </div>
                 </div>
